@@ -19,3 +19,8 @@ class ShiftSupervisor(Employee):
     def get_annual_salary(self):
         return self.__annual_salary
 
+    def __str__(self):
+        return f'Name: {self.get_name()}\n' \
+               f'ID: {self.get_id_num()}\n' \
+               f'Annual salary: {self.get_annual_salary()}\n' \
+               f'Annual bonus: {self.get_annual_bonus()}'
