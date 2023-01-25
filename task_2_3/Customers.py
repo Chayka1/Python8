@@ -11,3 +11,5 @@ class Customers(Person):
                f'Address: {self.get_address()}\n' \
                f'Phone number: {self.get_phone_nums()}'
 
+    def __repr__(self):
+        return repr(self.__str__())
